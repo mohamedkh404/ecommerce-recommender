@@ -33,19 +33,38 @@
 ---
 
 ## ▶️ How to Run
-
-### 1. Clone the repo
 ```bash
-git clone https://github.com/mohamedkh404/ecommerce-recommender.git
+### 1️⃣ Clone the Repository
+git clone https://github.com/username/ecommerce-recommender.git
 cd ecommerce-recommender
-2. Install backend dependencies
+
+2️⃣ Backend Setup (FastAPI)
+Go to the backend folder:
 cd backend
+
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+source .venv/bin/activate  # Linux/Mac
+
 pip install -r requirements.txt
-3. Run backend
-python app.py
-4. Install frontend dependencies
+
+uvicorn main:app --reload
+
+📍 API will be available at:
+http://127.0.0.1:8000
+
+3️⃣ Frontend Setup (React + Vite)
+Go to the frontend folder:
 cd ../frontend
+
 npm install
+
+npm run dev
+
+cd ../frontend
+
+npm install
+
 npm start
+
 Open in browser
-http://localhost:3000
